@@ -1,0 +1,24 @@
+@import "variables";
+@import "reset";
+@import "navbar";
+@import "home";
+@import "about";
+@import "process";
+@import "contact";
+@import "gallery";
+
+@font-face {
+    font-family: "vision-bold";
+    src: url(../css/fonts/VISION/VISION-BOLD.TTF);
+}
+
+@font-face {
+    font-family: "vision-black";
+    src: url(../css/fonts/VISION/VISION-BLACK.TTF);
+}
+
+@font-face {
+    font-family: "vision-heavy";
+    src: url(../css/fonts/VISION/VISION-HEAVY.TTF);
+}
+ 

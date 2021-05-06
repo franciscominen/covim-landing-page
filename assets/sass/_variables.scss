@@ -1,0 +1,84 @@
+/* -- Colors -- */
+$negro: #2c2c2d;
+$amarillo: #e2bf2c;
+$blanco: #f2f2f2;
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 25px;
+  z-index: 99999;
+  
+  @media (max-width: 768px) {
+    right: 10px;
+  }
+}
+  
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  padding: 5px;
+  border-radius: 4px;
+  background: $amarillo;
+  transition: all 0.4s;
+  color: $negro;
+  
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
+}
+  
+.back-to-top i:hover {
+  transform: scale(1.1);
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: $negro;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid $amarillo;
+  border-top-color: $blanco;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+  
